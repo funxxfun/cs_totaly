@@ -9,28 +9,32 @@
   <title>TOTALLY</title>
 </head>
 <body>
-  <header>
-    <div class="header-logo">TOTALLY</div>
-    <nav>
+  <header id="header">
+    <div class="header-logo">
+      <a href="">
+       <img src="./img/logo.svg" alt="TOTALLY">
+      </a>
+    </div>
+    <nav class="header-nav">
       <div class="nav-left">
         <ul>
-          <li>ALL</li>
-          <li>NEW</li>
-          <li>VINTAGE</li>
-          <li>CATEGORY</li>
-          <li>LOOKBOOK</li>
-          <li>BLOG</li>
+          <li><a href="">ALL</a></li>
+          <li><a href="">NEW</a></li>
+          <li><a href="">VINTAGE</a></li>
+          <li><a href="">CATEGORY</a></li>
+          <li><a href="">LOOKBOOK</a></li>
+          <li><a href="">BLOG</a></li>
         </ul>
       </div>
       <div class="nav-right">
         <ul>
-          <li>LOGIN</li>
-          <li>CONTACT</li>
+          <li><a href="">LOGIN</a></li>
+          <li><a href="">CONTACT</a></li>
         </ul>
       </div>
     </nav>
   </header>
-  <main>
+  <main id="main">
     <div class="main-content">
       <img src="./img/item.jpg" alt="">
     </div>
@@ -52,11 +56,11 @@
             <tr>
               <td>White</td>
               <td>S</td>
-              <td>
+              <td class="count-selects">
                 <select name="counts" id="">
-                  <option value="1"></option>
-                  <option value="2"></option>
-                  <option value="3"></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
                 </select>
               </td>
             </tr>
@@ -65,9 +69,9 @@
               <td>M</td>
               <td>
                 <select name="counts" id="">
-                  <option value="1"></option>
-                  <option value="2"></option>
-                  <option value="3"></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
                 </select>
               </td>
             </tr>
@@ -76,16 +80,16 @@
               <td>L</td>
               <td>
                 <select name="counts" id="">
-                  <option value="1"></option>
-                  <option value="2"></option>
-                  <option value="3"></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
                 </select>
               </td>
             </tr>
           </tbody>
         </table>
         <a href="" class="btn">ADD TO CART</a>
-        <table>
+        <table class="size">
           <thead>
             <tr>
               <th>Size</th>
@@ -102,13 +106,13 @@
               <td>99~99</td>
             </tr>
             <tr>
-              <th>S</th>
+              <th>M</th>
               <td>99~99</td>
               <td>99~99</td>
               <td>99~99</td>
             </tr>
             <tr>
-              <th>S</th>
+              <th>L</th>
               <td>99~99</td>
               <td>99~99</td>
               <td>99~99</td>
@@ -118,8 +122,8 @@
       </section>
     </div>
   </main>
-  <footer>
-    <p>©︎ TOTALLY</p>
+  <footer id="footer">
+    <p>&copy; TOTALLY</p>
   </footer>
 </body>
 </html>

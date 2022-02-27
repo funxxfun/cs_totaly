@@ -4,3 +4,150 @@
   box-sizing: border-box;
 }
 
+/* ここから共通 */
+body {
+  color: #333;
+  margin: 0 auto;
+  max-width: 1000px;
+  font-family: 'Raleway', sans-serif;
+  align-items: center;
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+/* ここからheader */
+#header {
+  margin-bottom: 50px;
+  padding: 46px 0 26px 0;
+  border-bottom: solid 1px #c3c3c3;
+}
+#header .header-logo {
+  margin: 0 auto 36px;
+  width: 109px;
+  line-height: 1px;
+}
+.header-nav {
+  margin: 0 auto;
+  max-width: 800px;
+  display: flex;
+  font-size: 0.75rem;
+  justify-content: space-between;
+}
+.header-nav ul {
+  display: flex;
+}
+.header-nav li {
+  margin-right: 14px;
+}
+.header-nav li a {
+  color: #333;
+}
+/* ここからmain-content */
+#main {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+}
+#main .main-content {
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+.main-content img {
+  max-width: 400px;
+  margin-right: 60px;
+}
+#main .product-title {
+  font-size: 16px;
+  line-height: 60px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border-top: 1px solid #c3c3c3c3;
+  border-bottom: 1px solid #c3c3c3c3;
+  text-align-last: left;
+}
+#main .detail, .price {
+  margin-bottom: 30px;
+  text-align-last: left;
+}
+.main-content a {
+  display: flex;
+  width: 100%;
+  line-height: 1;
+  padding: 18px 0;
+  background-color: #4B4B4B;
+  color: #c3c3c3;
+  margin-bottom: 30px;
+}
+/* ここからtable */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  color: #333;
+}
+table, td, th {
+  border: 1px solid #c3c3c3;
+  padding: 10px;
+  font-weight: normal;
+}
+.order tr {
+  border-top: none;
+}
+.order {
+  margin-bottom: 20px;
+}
+.order .count-selects {
+  width: 60%;
+}
+.order table {
+  border-bottom: none;
+}
+.order select {
+  width: 100%;
+  border: solid 1px #c3c3c3c3;
+  font-size: 12px;
+  padding: 0 10px;
+}
+.size th {
+  background-color: #ecebeb;
+}
+/* ここからfooter */
+#footer {
+  max-width: 1000px;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 10px;
+}
+/* ここからレスポンシブ */
+@media screen and (max-width: 896px) {
+  #header {
+    padding: 36px 16px 16px 16px;
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+  .nav-right {
+    display: none;
+  }
+  #main {
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+  #main .main-content {
+    margin-bottom: 0;
+  }
+  .main-content img {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .main-content .product, .price {
+    padding: 0 16px;
+  }
+}
